@@ -25,7 +25,7 @@ while True:
         break
 
     blue = cv2.inRange(frame, blueLower, blueUpper)
-    blue = cv2. GaussianBlur(blue, (3, 3), 0)
+    blue = cv2.GaussianBlur(blue, (3, 3), 0)
 
     (_, cnts, _) = cv2.findContours(blue.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
