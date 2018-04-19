@@ -9,3 +9,6 @@ cv2.imshow("Image", image)
 
 T = mahotas.thresholding.otsu(blurred)
 print("Otsu's threshold: {}".format(T))
+
+thresh = image.copy()
+thresh[thresh > T] = 255
